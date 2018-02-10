@@ -104,7 +104,7 @@ def test():
             file.write(str(i) + '\t' + str(res) + '\n')
 
 def test_single(n):
-    res = scan_video('videos/video-'+str(n)+'.avi', False, False)
+    res = scan_video('videos/video-'+str(n)+'.avi', True, True)
     e.eval_single(res, e.read_correct_single(n), str(n))
 
 if __name__ == '__main__':
